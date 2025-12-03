@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background: lightblue;
+}
+
+/* Візитка */
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+
+    /* анімація */
+    animation: bouncing 3s ease-in-out infinite;
+}
+
+.card h1 {
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+
+.card p {
+    margin: 0 0 16px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #3b8dff;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 10px;
+    transition:background-color 0.3s ease ;
+}
+
+.btn:hover{
+  background-color: #69b2ff;
+}
+
+@keyframes bouncing {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, calc(-50% - 15px));
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
